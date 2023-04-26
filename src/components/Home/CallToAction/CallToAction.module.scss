@@ -1,0 +1,104 @@
+@import "/src/components/Home/Biz_Home.module.scss";
+.CallTOAction_Page {
+  background-color: rgb(17, 28, 50);
+  background-color: #1d3046;
+  // position: relative;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns: 1fr 1fr;
+  .Left_Part {
+    @include GridRowmaxmax;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+    h4 {
+      color: #fff;
+      font-size: 30px;
+    }
+    > span {
+      color: #fff;
+      font-size: 22px;
+    }
+  }
+  .Right_Part {
+    display: grid;
+    align-items: center;
+    .Form {
+      background-color: #fff;
+      border-radius: 5px;
+      height: 570px;
+      width: 600px;
+      display: grid;
+      padding: 27px;
+      h3 {
+        font-size: 24px;
+        color: #1a1e22;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 10px
+      }
+      .Content {
+        @include GridFiveRowmax;
+        gap: 20px;
+        align-items: flex-start;
+        > div {
+          @include GridRowmaxmax;
+          gap: 4px;
+          label {
+            font-size: 17px;
+            color: #46525e;
+            font-weight: 500;
+          }
+          input[type="text"] {
+            height: 40px;
+            padding-left: 7px;
+            // font-size: 18px;
+            color: #46525e;
+            font-weight: 500;
+            border-radius: 5px;
+            border: 1px solid rgb(178, 188, 192);
+          }
+          textarea{
+            color: #46525e;
+            font-weight: 500;
+            border-radius: 5px;
+            border: 1px solid rgb(178, 188, 192);
+            padding-left: 7px;
+            padding-top: 5px;
+            resize: none;
+          }
+        }
+        .Data {
+          @include GridColfarfar;
+          column-gap: 50px;
+
+          > div {
+            gap:4px;
+            @include GridRowmaxmax;
+            input[type="text"] {
+              height: 40px;
+            }
+          }
+        }
+        button{
+          background-color: rgb(40, 182, 243);
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          border: none;
+          border-radius: 5px;
+          padding: 5px;
+          cursor: pointer;
+          transition: .2s;
+          &:hover{
+            opacity: 80%;
+          }
+          &:active{
+            transform: scale(.959);
+          }
+        }
+      }
+    }
+  }
+}

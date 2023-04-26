@@ -1,0 +1,54 @@
+.Section_Five {
+    // background-color: #282c31;
+    background-color: rgb(44, 52, 62);
+    height: 350px;
+    display: grid;
+    align-items: center;
+    background-image: url(https://sherbazaar.co/wp-content/uploads/2022/06/eimap-1.png);
+    grid-template-columns: repeat(4, 1fr);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    > div {
+      text-align: center;
+      // border: 2px solid #fff;
+      cursor: pointer;
+      h5 {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 17px;
+        padding: 10px 0px;
+      }
+      span {
+        color: #cecece;
+      }
+      p {
+        color: red;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 10px 0px;
+      }
+      > svg {
+        font-size: 50px;
+        // fill: #fff;
+        color: #fff;
+      }
+    }
+    iframe {
+      // width: 80%;
+      // filter: invert(100%);
+    }
+  }
+  .CopyRight {
+    border-top: 1px solid #414446;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    background-color: #282c31;
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 15px 0px;
+      color: #fff;
+    }
+  }

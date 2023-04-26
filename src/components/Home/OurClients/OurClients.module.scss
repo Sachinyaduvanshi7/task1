@@ -1,0 +1,124 @@
+@import "/src/components/Home/Biz_Home.module.scss";
+.OurClients {
+  display: grid;
+
+  .Top_Section {
+    @include GridColfarfar;
+    padding: 50px 50px;
+    // align-items: center;
+    h4 {
+      font-size: 40px;
+      color: #25404b;
+      font-weight: 600;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      > span {
+        color: #1595c7;
+        font-size: 50px;
+      }
+    }
+    p {
+      font-size: 16.4px;
+      font-weight: 500;
+      color: #292c2d;
+    }
+    > div {
+      &:nth-child(1) {
+        @include GridThreeRowmax;
+        gap: 30px;
+        > button {
+          width: 130px;
+          background-color: #1595c7;
+          border: 1px solid #1595c7;
+          padding: 8px 17px;
+          border: none;
+          border-radius: 20px;
+          color: #ffffff;
+          font-weight: 500;
+          cursor: pointer;
+          transition: 0.2s;
+          &:hover {
+            background-color: #e5f6fc;
+            color: #1595c7;
+            border: 1px solid #1595c7;
+          }
+        }
+      }
+      img {
+        width: 50vw;
+        margin-top: -50px;
+      }
+    }
+  }
+  .Conatiner {
+    padding: 50px 50px;
+    display: grid;
+    // width: 100%;
+    > div {
+      grid-template-columns: repeat(5, auto);
+      display: grid;
+        // justify-content: center;
+      gap: 50px;
+      .Card {
+        display: grid;
+        width: auto;
+        height: 150px;
+        box-shadow: -1px 1px 5px 1px #ccc;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        // grid-template-rows: max-content auto;
+        .Data_Coantainer {
+          background: linear-gradient(
+            135deg,
+            rgb(251, 130, 205) 0%,
+            rgb(91, 88, 247) 100%
+          );
+          padding: 20px;
+          color: #fff;
+          margin-top: -380px;
+          height: 230px;
+          transition: 0.5s;
+          display: grid;
+          align-items: center;
+          width: 100%;
+          position: absolute;
+          justify-content: center;
+          >p{
+            font-size: 11.7px;
+            font-weight: 400;
+          }
+        }
+        &:hover {
+          .Data_Coantainer {
+            margin-top: 0px;
+            cursor: pointer;
+          }
+        }
+        .img {
+          display: grid;
+          width: auto;
+          align-items: center;
+        //   margin-top: 22%;
+
+          img {
+            padding: 2px 0px;
+            width: auto;
+            width: 150px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            max-height: 100px;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.01);
+          box-shadow: -1px 5px 5px 1px #ccc;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "./components/Home/Biz_Home.module.scss";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  user-select: none;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  // display: grid;
+  .Biz_PageStart {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    padding-top: 70px;
+    margin-top: -70px;
+    overflow: auto;
+    display:grid;
+  }
+  .Back_Header {
+    display: grid;
+    background-color: rgb(224, 231, 235);
+    padding: 5px 17px;
+    width: 100%;
+    // box-shadow: 5px 1px 5px 0px black;
+    // margin-top: 17px;
+    p {
+      @include flexAlign;
+      cursor: pointer;
+      color: rgb(253, 22, 22);
+    }
+  }
+}
+
+body {
+  // overflow: hidden;
+  margin-top: 70px;
+}
+
+img,
+p,
+span,
+a,
+link {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,465 @@
+$Primary-TextColor: #34495e;
+$Primary-LightColor: #ffffff;
+$Primary-Background: #f7fafb;
+$Primary-ThemeColor: #20bead;
+$UltraSmallMediumWidth: 390px;
+$UltraSmallWidth: 475px;
+$SmallWidth: 775px;
+$MediumWidth: 998px;
+$LargeWidth: 1300px;
+
+.MainDiv {
+  background: $Primary-Background;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 50vw 32vw;
+  justify-content: space-around;
+
+  @media (max-width: $LargeWidth) {
+    grid-template-columns: 50vw max-content;
+  }
+
+  @media (max-width: $SmallWidth) {
+    grid-template-columns: max-content;
+    grid-template-rows: 12vh auto;
+    justify-content: center;
+  }
+
+  @media (max-width: $UltraSmallMediumWidth) {
+    grid-template-rows: 6vh auto;
+    gap: 4px;
+  }
+
+  .MainBox {
+    display: grid;
+    height: 80vh;
+    grid-template-rows: 8vh max-content max-content;
+    row-gap: 4vh;
+    align-self: flex-start;
+    padding-left: 10%;
+    margin-top: 10vh;
+
+    @media (max-width: $SmallWidth) {
+      margin-top: 6vh !important;
+      grid-template-rows: max-content;
+      grid-template-columns: 100%;
+      justify-content: center;
+      padding: 0px !important;
+    }
+
+    img:first-child {
+      height: 40px;
+
+      @media (max-width: $MediumWidth) {
+        height: 30px;
+      }
+
+      @media (max-width: $SmallWidth) {
+        margin: auto;
+      }
+
+      @media (max-width: $UltraSmallMediumWidth) {
+        height: 24px;
+      }
+    }
+
+    .MainBoxTxt {
+      color: $Primary-TextColor;
+      font-size: 30px;
+      width: 100%;
+      font-weight: 600;
+      display: grid;
+      grid-template-rows: max-content max-content max-content;
+      row-gap: 0px;
+      font-family: "Open sans", sans-serif !important;
+
+      @media (max-width: $LargeWidth) {
+        font-size: 24px !important;
+      }
+
+      @media (max-width: $MediumWidth) {
+        font-size: 18px !important;
+      }
+
+      @media (max-width: $SmallWidth) {
+        display: none;
+      }
+
+      p {
+        color: $Primary-TextColor;
+        opacity: 0.5;
+        font-size: 15px !important;
+        width: 80%;
+        font-weight: 500;
+        line-height: 28px !important;
+        padding-top: 12px;
+        font-family: "Open sans", sans-serif !important;
+
+        @media (max-width: $LargeWidth) {
+          font-size: 12px !important;
+          line-height: 20px !important;
+          width: 70%;
+        }
+
+        @media (max-width: $MediumWidth) {
+          font-size: 10px !important;
+        }
+
+        @media (max-width: $SmallWidth) {
+          display: none;
+        }
+      }
+
+      a {
+        color: $Primary-TextColor;
+      }
+    }
+
+    img.MainBanner {
+      width: 84%;
+      margin: auto auto 20px auto;
+
+      @media (max-width: $LargeWidth) {
+        width: 74%;
+      }
+
+      @media (max-width: $SmallWidth) {
+        display: none;
+      }
+    }
+  }
+
+  .LoginBox {
+    padding: 0px;
+    display: grid;
+    grid-template-rows: auto max-content;
+    max-width: 480px;
+    min-height: 80vh;
+    align-self: center;
+    background: $Primary-LightColor;
+    border-radius: 10px;
+    box-shadow: rgba(82, 122, 181, 0.2) 0px 40px 99px;
+    padding: 80px 7% 25px;
+    animation: 0s ease 0s 1 normal none running none;
+    padding: 0px;
+
+    @media (max-width: $LargeWidth) {
+      min-width: 380px;
+      min-height: 44vh;
+    }
+
+    @media (max-width: $MediumWidth) {
+      min-width: 320px;
+      min-height: 50vh;
+    }
+
+    @media (max-width: $SmallWidth) {
+      min-width: 380px;
+      min-height: 40vh;
+    }
+
+    @media (max-width: $UltraSmallWidth) {
+      min-width: 300px;
+      min-height: 40vh;
+    }
+
+    @media (max-width: $UltraSmallMediumWidth) {
+      min-width: 280px;
+      min-height: 40vh;
+    }
+
+    .LoginFormBox {
+      padding: 60px 30px 30px 40px;
+      display: grid;
+      grid-template-rows: max-content max-content;
+
+      @media (max-width: $LargeWidth) {
+        padding: 40px 30px 30px 40px;
+      }
+
+      @media (max-width: $SmallWidth) {
+        padding: 20px 26px 26px 40px;
+      }
+
+      @media (max-width: $UltraSmallMediumWidth) {
+        padding: 16px 20px 20px 34px;
+      }
+
+      .LoginFormHeadBox {
+        h3 {
+          font-size: 26px !important;
+          padding-bottom: 2px;
+          color: $Primary-TextColor;
+
+          @media (max-width: $LargeWidth) {
+            font-size: 20px !important;
+          }
+
+          @media (max-width: $UltraSmallMediumWidth) {
+            font-size: 18px !important;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: $Primary-TextColor;
+          opacity: 0.6;
+
+          @media (max-width: $LargeWidth) {
+            font-size: 11px !important;
+          }
+
+          @media (max-width: $UltraSmallMediumWidth) {
+            font-size: 9px !important;
+          }
+        }
+      }
+
+      .LoginFormMainBox {
+        padding-top: 40px;
+
+        @media (max-width: $LargeWidth) {
+          padding-top: 30px !important;
+        }
+
+        @media (max-width: $UltraSmallMediumWidth) {
+          padding-top: 20px !important;
+        }
+
+        .LoginFormInputGroup {
+          border: 1px solid $Primary-TextColor;
+          position: relative;
+          display: grid;
+          grid-template-columns: max-content auto max-content;
+          margin-top: 32px;
+
+          @media (max-width: $MediumWidth) {
+            margin-top: 22px;
+          }
+
+          &:first-child {
+            margin-top: 0px !important;
+          }
+
+          &:focus-within {
+            border: 1px solid $Primary-ThemeColor;
+
+            label,
+            .BoxIcon {
+              color: $Primary-ThemeColor !important;
+            }
+          }
+
+          label {
+            font-size: 14px;
+            background-color: $Primary-LightColor;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+            padding: 0px 6px;
+            color: $Primary-TextColor;
+            font-weight: 600;
+            user-select: none !important;
+            -webkit-user-drag: none !important;
+
+            @media (max-width: $LargeWidth) {
+              top: -8px;
+              font-size: 10px !important;
+            }
+
+            @media (max-width: $MediumWidth) {
+              top: -6px;
+              font-size: 9px !important;
+            }
+          }
+
+          input {
+            border: 0px;
+            color: $Primary-TextColor;
+            padding: 18px 14px 14px 14px;
+
+            @media (max-width: $LargeWidth) {
+              font-size: 11px !important;
+              padding: 12px 8px 8px 8px;
+            }
+
+            @media (max-width: $MediumWidth) {
+              font-size: 10px !important;
+              padding: 10px 6px 6px 6px;
+            }
+
+            &::placeholder {
+              color: #85929e;
+            }
+
+            &:-webkit-autofill {
+              box-shadow: 0 0 0 30px $Primary-LightColor inset !important;
+              -webkit-box-shadow: 0 0 0 30px $Primary-LightColor inset !important;
+              opacity: 1;
+            }
+
+            &:disabled {
+              user-select: none !important;
+              -webkit-user-drag: none !important;
+              box-shadow: 0 0 0 30px $Primary-LightColor inset !important;
+              -webkit-box-shadow: 0 0 0 30px $Primary-LightColor inset !important;
+            }
+          }
+
+          .BoxIcon {
+            color: $Primary-TextColor;
+            font-size: 20px;
+            margin: 16px 0px 14px 14px;
+
+            @media (max-width: $LargeWidth) {
+              font-size: 14px !important;
+              margin: 13px 8px 8px 8px;
+            }
+
+            @media (max-width: $MediumWidth) {
+              margin: 10px 6px 6px 6px;
+            }
+          }
+
+          .PassBoxIcon,
+          .PassBoxIconClosed {
+            color: $Primary-TextColor;
+            opacity: 0.8;
+            font-size: 25px;
+            margin: 14px 14px 12px 14px;
+            cursor: pointer;
+
+            @media (max-width: $LargeWidth) {
+              font-size: 20px !important;
+              margin: 10px 8px 8px 8px;
+            }
+
+            @media (max-width: $MediumWidth) {
+              font-size: 18px !important;
+              margin: 6px 6px 6px 6px;
+            }
+          }
+
+          .PassBoxIconClosed {
+            @media (max-width: $LargeWidth) {
+              font-size: 21px !important;
+              margin: 10px 8px 8px 8px;
+            }
+
+            @media (max-width: $MediumWidth) {
+              font-size: 18px !important;
+              margin: 7px 6px 6px 6px;
+            }
+          }
+        }
+
+        .LoginFormForgotLink {
+          display: flex;
+          justify-content: flex-end;
+
+          a {
+            font-size: 13px;
+            color: $Primary-TextColor;
+            margin-top: 6px;
+
+            @media (max-width: $LargeWidth) {
+              font-size: 11px;
+            }
+
+            @media (max-width: $MediumWidth) {
+              margin-top: 4px;
+              font-size: 10px;
+            }
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        button {
+          background: $Primary-ThemeColor;
+          height: 48px;
+          width: 100%;
+          border: none;
+          color: $Primary-LightColor;
+          border-radius: 2px;
+          font-size: 16px;
+          font-weight: 500;
+          margin-top: 25px;
+          cursor: pointer;
+          user-select: none !important;
+
+          @media (max-width: $LargeWidth) {
+            height: 36px;
+            font-size: 14px;
+          }
+
+          @media (max-width: $MediumWidth) {
+            height: 30px;
+            font-size: 12px;
+          }
+
+          @media (max-width: $UltraSmallMediumWidth) {
+            height: 26px !important;
+            margin-top: 16px !important;
+          }
+
+          &:hover {
+            background-color: rgb(28, 177, 161);
+          }
+
+          &:active {
+            border: 2px solid $Primary-LightColor;
+          }
+        }
+      }
+    }
+
+    .PoweredByBox {
+      background-color: $Primary-Background;
+      border-radius: 0px 0px 10px 10px;
+      border-top: 1px solid #d6dbdf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 10px 12px 8px 12px;
+        color: $Primary-TextColor !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        @media (max-width: $LargeWidth) {
+          font-size: 12px !important;
+        }
+
+        @media (max-width: $MediumWidth) {
+          font-size: 11px !important;
+        }
+
+        span {
+          margin-top: -3px;
+        }
+
+        .PoweredByBoxLogo {
+          width: 80px;
+
+          @media (max-width: $LargeWidth) {
+            width: 70px !important;
+          }
+
+          @media (max-width: $MediumWidth) {
+            width: 60px !important;
+          }
+        }
+      }
+    }
+  }
+}

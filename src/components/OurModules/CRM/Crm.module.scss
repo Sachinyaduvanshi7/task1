@@ -1,0 +1,170 @@
+@import "/src//components/Home/Biz_Home.module.scss";
+.Page_Section {
+  display: grid;
+  @include GridRowmaxauto;
+  // overflow: auto;
+  .Section {
+    display: grid;
+    overflow: auto;
+    h4 {
+      font-size: 40px;
+      color: #25404b;
+      font-weight: 600;
+      > span {
+        color: #1595c7;
+      }
+    }
+    .Container {
+      position: relative;
+      overflow: hidden;
+      > img {
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        width: 50%;
+        display: grid;
+        opacity: 57%;
+        transform: rotate(200deg);
+      }
+      // .ColourFull {
+      //   background-color: #e3ecf3;
+      //   width: 250px;
+      //   height: 250px;
+      //   border-radius: 50%;
+      //   position: absolute;
+      //   top: -50px;
+      //   left: -50px;
+      //   animation: wavefunction infinite 15s linear;
+      //   display: none;
+      // }
+
+      // @keyframes wavefunction {
+      //   0% {
+      //   }
+      //   50% {
+      //     transform: translate3d(50px, 80px, 0px) rotateX(0deg) rotateY(0deg)
+      //       rotateZ(130deg) scaleX(1) scaleY(1) scaleZ(1);
+      //   }
+      // }
+      .Top_Section {
+        padding: 80px 50px;
+        @include GridColautoauto;
+        position: relative;
+        gap: 80px;
+        z-index: 2;
+
+        .Content {
+          @include GridThreeRowmax;
+          gap: 40px;
+
+          p {
+            font-size: 14.5px;
+            font-weight: 500;
+            color: #486673;
+          }
+        }
+      }
+      .Img {
+        > div {
+          background-color: #bbdeed;
+          width: 600px;
+          padding: 50px;
+          border-radius: 50% 50% 0px 0px;
+          > img {
+            background-color: #cbe3ed;
+            width: 490px;
+            height: 300px;
+            border-radius: 50% 50% 0px 0px;
+            fill: #cbe3ed;
+          }
+        }
+      }
+    }
+    .CrmFeature {
+      display: grid;
+      width: 100%;
+      padding: 30px 50px 100px 50px;
+      h4 {
+        padding-bottom: 40px;
+      }
+      .Card_Container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        .Card {
+          border-radius: 20px;
+          position: relative;
+          display: grid;
+          grid-template-rows: max-content max-content;
+          height: 230px;
+          overflow: hidden;
+          border: 1px solid rgb(214, 219, 220);
+          box-shadow: -1px 1px 5px 0px #ccc;
+
+          .Data_Coantainer {
+            // background-color: #1595c7;
+            background: linear-gradient(
+              135deg,
+              rgb(251, 130, 205) 0%,
+              rgb(91, 88, 247) 100%
+            );
+            padding: 20px;
+            color: #fff;
+            margin-top: -230px;
+            height: 230px;
+            transition: 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          &:hover {
+            .Data_Coantainer {
+              margin-top: 0px;
+              cursor: pointer;
+            }
+          }
+
+          .Card_Data {
+            @include GridRowautomax;
+            border-radius: 20px;
+            position: relative;
+            padding: 10px 0px 0px 10px;
+
+            .Back_img {
+              background-color: #ffffff00;
+              background-image: url(https://flowndeveloper.com/wp-content/uploads/2022/12/service-pattern.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              display: grid;
+              // z-index: 2;
+              height: 150px;
+              width: 250px;
+              position: absolute;
+              border-radius: 20px;
+              top: 0;
+              left: 0;
+            }
+
+            > img {
+              border-radius: 20px 20px 0px 0px;
+              display: grid;
+              width: 100%;
+              height: 150px;
+            }
+
+            span {
+              font-size: 18px;
+              color: #25404b;
+              font-weight: 600;
+
+              text-align: center;
+              border-radius: 0px 0px 20px 20px;
+              padding-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

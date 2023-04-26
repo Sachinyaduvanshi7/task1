@@ -1,0 +1,259 @@
+@import "/src/components/Home/Biz_Home.module.scss";
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  right: 0;
+  height: 70px;
+  .TopHeader {
+    @include GridColmaxautomax;
+    gap: 10vh;
+    align-items: flex-start;
+    padding: 0px 30px 0px 0px;
+    background-color: rgb(44, 52, 62);
+    // box-shadow: -1px 1px 8px 1px rgb(144, 144, 144);
+    border-bottom: 1px solid #ccc;
+    // height: 90px;
+    .Client_Logo {
+      width: 260px;
+      background-color: #fff;
+      padding: 5px 20px;
+      cursor: pointer;
+      border-bottom: 1px solid #ccc;
+    }
+    li {
+      list-style: none;
+      font-weight: 500;
+      @include GridColmaxmax;
+      gap: 0px;
+      height: 100%;
+      padding: 8px 15px;
+      align-items: center;
+      > svg {
+        font-size: 25px;
+        transition: 0.3s;
+      }
+    }
+    .MenuListing {
+      display: grid;
+      height: 100%;
+      // align-items: center;
+      .Lsit {
+        display: grid;
+        ul {
+          display: grid;
+          grid-template-columns: repeat(6, max-content);
+          // gap: 15px;
+          > div {
+            display: grid;
+            color: #fff;
+            .Main_Menu {
+              display: grid;
+              color: #fff;
+              text-decoration: none;
+              height: 100%;
+              align-items: center;
+              &:hover{
+                color: #000000;
+              }
+            }
+            .SubMenu {
+              padding: 30px;
+              // height: 200px;
+              // width: 500px;
+              background-color: #fff;
+              position: absolute;
+              top: 70px;
+              display: grid;
+              grid-template-columns: auto max-content;
+              gap: 60px;
+              row-gap: 10px;
+              border-radius: 0px 0px 10px 10px;
+              display: none;
+              box-shadow: 1px -1px 8px 0px #abb8c2;
+              z-index: 99999999;
+              .menu {
+                color: #2f3338;
+                font-weight: 500;
+                font-size: 16px;
+                cursor: pointer;
+                &:hover {
+                  text-decoration: underline;
+                  opacity: 80%;
+                }
+              }
+            }
+
+            &:hover {
+              background-color: #fff;
+              color: #000000;
+              cursor: pointer;
+              svg {
+                transform: rotate(180deg);
+              }
+              .SubMenu {
+                display: grid;
+              }
+              .Main_Menu {
+                
+                  color: #000000;
+                
+              }
+            }
+          }
+        }
+      }
+    }
+    .Call_Action {
+      background-color: rgb(69, 137, 247);
+      height: 50px;
+      margin-top: 11px;
+      border-radius: 2px;
+      li {
+        color: #fff;
+      }
+      .LetsTalk {
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        li {
+          color: rgb(69, 137, 247);
+        }
+      }
+    }
+  }
+}
+
+.SubHeader {
+  display: flex;
+  // position: relative;
+  justify-content: space-around;
+  background-color: rgb(38, 81, 96);
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 99;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  left: 0;
+  // gap: ;
+  .SubLink {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    list-style: none;
+    &:hover {
+      text-decoration: 2px underline rgb(254, 134, 64);
+    }
+  }
+  .ActiveLink {
+    color: red;
+  }
+}
+
+// .MenuBar {
+//   > svg {
+//     font-size: 36px;
+//     position: absolute;
+//     top: 30px;
+//     right: 15px;
+//     cursor: pointer;
+//   }
+//   .Container {
+//     height: 100vh;
+//     width: 100vw;
+//     background-color: #0e0e0eab;
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     justify-content: flex-end;
+//     .Section_Bar {
+//       height: 100vh;
+//       width: 300px;
+//       background-color: #fff;
+//       right: 0;
+//       position: absolute;
+//       z-index: 9999999;
+//       > img {
+//         display: flex;
+//         justify-content: center;
+//         margin: auto;
+//         margin-bottom: 10px;
+//       }
+//       > svg {
+//         font-size: 20px;
+//         color: #24292b;
+//         display: flex;
+//         cursor: pointer;
+//         margin: 15px 10px;
+//       }
+//       > div {
+//         li {
+//           list-style: none;
+//           border-top: 1px solid #ccc;
+//           padding: 4px 10px;
+//           color: #3b3e43;
+//           font-weight: 500;
+//           font-size: 15px;
+//           cursor: pointer;
+//           &:nth-child(4) {
+//             border-bottom: 1px solid #ccc;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// .MenuActive {
+//   background-color: #e8e7e7ab;
+// }
+
+// .MenuBar {
+//   display: none;
+// }
+// @media (max-width: 1422px) {
+//   .Header {
+//     @include GridColautomax;
+//     justify-content: space-around;
+//     padding: 30px 0px;
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   .Header {
+//     .MenuBar {
+//       display: block;
+//     }
+//     .MenuListing {
+//       display: none;
+//     }
+//   }
+//   .TopHeader {
+//     .Section {
+//       height: 300px;
+
+//       > h4 {
+//         font-size: 2.7rem;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   .TopHeader {
+//     .Section {
+//       height: 300px;
+
+//       > h4 {
+//         font-size: 1.7rem;
+//       }
+//     }
+//   }
+// }
