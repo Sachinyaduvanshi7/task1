@@ -86,7 +86,7 @@ const OurPartners = () => {
         </div>
         <div>
           <img
-            src="https://img.freepik.com/premium-vector/partners-shaking-hands-illustration_179970-795.jpg?w=2000"
+            src="https://ucommerce.net/media/7207/handshake.gif"
             alt=""
           />
         </div>

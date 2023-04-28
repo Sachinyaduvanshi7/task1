@@ -18,6 +18,7 @@ import BusinessIntelligence from "../components/OurModules/BusinessIntelligence/
 import OurClients from "../components/Home/OurClients/OurClients";
 import ContactUs from "../components/Home/ContactUs/ContactUs";
 import OurPartners from "../components/Home/OurPartners/OurPartners";
+import About from "../components/Home/About/About";
 const RoutesMap = () => {
   return (
     <Router>
@@ -122,12 +123,16 @@ const RoutesMap = () => {
           path="/Partners"
           element={<Page title="Partners" component={<OurPartners />} />}
         />
-           <Route
+        <Route
           exact
           path="/ContactUS"
           element={<Page title="ContactUS" component={<ContactUs />} />}
         />
-        
+        <Route
+          exact
+          path="/About"
+          element={<Page title="About" component={<About />} />}
+        />
         <Route path="*" element={<Page title="Not found" />} />
       </Routes>
     </Router>

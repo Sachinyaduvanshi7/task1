@@ -83,7 +83,12 @@ function Header() {
           <div className={BizClass.Lsit}>
             <ul>
               <div>
-                <li>About Us</li>
+              <li>
+                <Link className={BizClass.Main_Menu} to="About">
+                  {" "}
+                  About Us
+                </Link>{" "}
+                </li>
               </div>
               <div>
                 <li>
@@ -141,11 +146,11 @@ function Header() {
                 </li>
               </div>
               <div>
-              <li>
-                <Link className={BizClass.Main_Menu} to="ContactUS">
-                  {" "}
-                  Contact Us
-                </Link>{" "}
+                <li>
+                  <Link className={BizClass.Main_Menu} to="ContactUS">
+                    {" "}
+                    Contact Us
+                  </Link>{" "}
                 </li>
               </div>
             </ul>
