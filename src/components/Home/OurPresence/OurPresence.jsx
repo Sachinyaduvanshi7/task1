@@ -4,6 +4,7 @@ import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 const OurPresence = () => {
   return (
     <div className={BizClass.OurPresence}>
+      <div className={BizClass.Container}>
       <div>
         {" "}
         <h4>
@@ -34,6 +35,7 @@ const OurPresence = () => {
           <img src="	https://mybiznext.in/images/flag-og-africa.png" alt="" />
           <span>AFRICA</span>
         </div>
+      </div>
       </div>
     </div>
   );

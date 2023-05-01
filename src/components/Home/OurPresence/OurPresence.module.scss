@@ -1,52 +1,60 @@
 @import "/src//components/Home/Biz_Home.module.scss";
 .OurPresence {
-  padding: 80px 50px;
-  @include GridColmaxauto;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: rgb(231, 246, 253);
-  h4 {
-    font-size: 43px;
-    font-weight: 700;
-    color: #292c2d;
-  }
-  > div {
-    @include GridRowmaxmax;
-    gap: 20px;
-    .Icon {
-      @include GridThreeColmax;
-      gap: 15px;
-      > svg {
-        font-size: 50px;
-        color: rgb(39, 82, 95);
-        &:hover {
-          opacity: 70%;
-          cursor: pointer;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190523/pngtree-3d-stereo-business-background-image_112539.jpg);
+  // height: 400px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  .Container {
+    padding: 80px 50px;
+    @include GridColmaxauto;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(231, 231, 253, 0.365);
+
+    h4 {
+      font-size: 43px;
+      font-weight: 700;
+      color: #292c2d;
+    }
+    > div {
+      @include GridRowmaxmax;
+      gap: 20px;
+      .Icon {
+        @include GridThreeColmax;
+        gap: 15px;
+        > svg {
+          font-size: 50px;
+          color: rgb(39, 82, 95);
+          &:hover {
+            opacity: 70%;
+            cursor: pointer;
+          }
         }
       }
     }
-  }
-  .Countries {
-    @include GridThreeColauto;
-    gap: 50px;
-    > div {
-      box-shadow: -1px 1px 8px 0px #aeacac;
-      @include GridRowmaxmax;
-      border-radius: 40px;
-      > img {
-        @include flexproperties;
-        width: 170px;
-        // height: 170px;
-        border-radius: 35px 35px 0px 0px;
-      }
-      span {
-        color: #2e425a;
-        font-size: 20px;
-        font-weight: 600;
-        text-align: center;
-        padding: 7px 0px;
-        background-color: #2e425a5f;
-        border-radius: 0px 0px 40px 40px;
+    .Countries {
+      @include GridThreeColauto;
+      gap: 50px;
+      > div {
+        box-shadow: -1px 1px 8px 0px #aeacac;
+        @include GridRowmaxmax;
+        border-radius: 40px;
+        > img {
+          @include flexproperties;
+          width: 170px;
+          // height: 170px;
+          border-radius: 35px 35px 0px 0px;
+        }
+        span {
+          color: #2e425a;
+          font-size: 20px;
+          font-weight: 600;
+          text-align: center;
+          padding: 7px 0px;
+          background-color: #2e425a5f;
+          border-radius: 0px 0px 40px 40px;
+        }
       }
     }
   }

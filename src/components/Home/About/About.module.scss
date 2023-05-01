@@ -64,10 +64,11 @@
       }
     }
   }
-  .Container {
+  .Misson_Container {
     padding: 0px 70px;
-    @include GridColfarfar;
-    gap: 150px;
+    // @include GridColfarfar;
+    display: flex;
+    // gap: 150px;
     justify-content: space-around;
     .Content {
       @include GridRowmaxmax;
@@ -147,7 +148,7 @@
             height: 190px;
             margin-top: -100px;
           }
-       
+
           > div {
             @include GridRowmaxmax;
             gap: 0px;
@@ -158,9 +159,9 @@
               font-weight: 500;
               font-size: 14px;
             }
-            h1{
-                font-size: 24px
-              }
+            h1 {
+              font-size: 24px;
+            }
             > div {
               display: flex;
               justify-content: center;
@@ -198,13 +199,101 @@
           }
         }
         &:nth-child(4) {
-            > div {
-                &:nth-child(1) {
-                  background-color: #9cb3d8;
-                }
-              }
+          > div {
+            &:nth-child(1) {
+              background-color: #9cb3d8;
+            }
+          }
           .Card {
             background-color: #d6deeb;
+          }
+        }
+      }
+    }
+  }
+  .Our_Philosophy,
+  .Methology,
+  .Our_Journey {
+    // justify-content: center;
+    display: grid;
+    margin-bottom: 40px;
+    > img {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+    span {
+      font-size: 17px;
+      color: #25404b;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      padding-top: 90px;
+    }
+    h4 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: -0px;
+    }
+  }
+
+  .Our_Journey {
+    background-image: url(https://img.freepik.com/free-vector/seamless-white-interlaced-rounded-arc-patterned-background_53876-97975.jpg?w=2000);
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    width: 100%;
+    // display: none;
+    // margin-top: 90px;
+    > .Container {
+      background-color: #434a9431;
+      display: grid;
+      grid-template-rows: max-content auto;
+      width: 100%;
+     
+      > div {
+        @include GridRowmaxmax;
+
+        span {
+          padding-top: 20px;
+        }
+      }
+      .Content_Section{
+       display: grid;
+       grid-template-columns: repeat(3
+       , 1fr);
+       gap: 18px;
+       padding: 18px;
+        .Card{
+          display:grid ;
+          grid-template-columns: max-content auto;
+          border: 1px solid #ccc;
+          box-shadow: -1px 1px 5px 0px #ccc;
+          >img{
+            width: 180px;
+            height: 150px;
+          }
+          >div{
+            background-color: #fff;
+            padding-left: 10px;
+            h3{
+              color: #263c54;
+              font-weight: 600;
+              font-size: 18.5px;
+            }
+            span{
+              color: #263c54;
+              font-weight: 500;
+              font-size: 16px;
+              justify-content: flex-start;
+            }
+          }
+          &:hover{
+            box-shadow: -1px 1px 8px 0px #9b9ea0;
+            cursor: pointer;
           }
         }
       }
