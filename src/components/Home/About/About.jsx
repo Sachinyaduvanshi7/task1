@@ -96,7 +96,7 @@ const About = () => {
       content: (
         <span>
           {" "}
-          2 Channel Partners <br /> 10 Employees <br /> 2 Office <br />2 Order
+         ----- Channel Partners  <br /> ---- Employees <br /> --- Office <br />---- Order
         </span>
       ),
     },
@@ -110,7 +110,7 @@ const About = () => {
       content: (
         <span>
           {" "}
-          2 Channel Partners <br /> 10 Employees <br /> 2 Office <br />2 Order
+          ---- Channel Partners <br /> ---- Employees <br /> ---- Office <br />---- Order
         </span>
       ),
     },
@@ -124,7 +124,7 @@ const About = () => {
       content: (
         <span>
           {" "}
-          2 Channel Partners <br /> 10 Employees <br /> 2 Office <br />2 Order
+          ---- Channel Partners <br /> ---- Employees <br /> ---- Office <br />---- Order
         </span>
       ),
     },
@@ -138,7 +138,7 @@ const About = () => {
       content: (
         <span>
           {" "}
-          2 Channel Partners <br /> 10 Employees <br /> 2 Office <br />2 Order
+          ---- Channel Partners <br /> ---- Employees <br /> ---- Office <br />---- Order
         </span>
       ),
     },
