@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c80f1ba8.css",
+    "main.js": "./static/js/main.c4f8a10f.js",
+    "static/js/787.a5a34ffc.chunk.js": "./static/js/787.a5a34ffc.chunk.js",
+    "static/media/ErrorPage_Img.png": "./static/media/ErrorPage_Img.31bad973d1c29ba96bb8.png",
+    "static/media/Rachit.jpeg": "./static/media/Rachit.1b1b1b51079599562708.jpeg",
+    "static/media/SachinYadav(Designer).png.jpg": "./static/media/SachinYadav(Designer).png.a572490b61358bbed95e.jpg",
+    "index.html": "./index.html",
+    "main.c80f1ba8.css.map": "./static/css/main.c80f1ba8.css.map",
+    "main.c4f8a10f.js.map": "./static/js/main.c4f8a10f.js.map",
+    "787.a5a34ffc.chunk.js.map": "./static/js/787.a5a34ffc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c80f1ba8.css",
+    "static/js/main.c4f8a10f.js"
+  ]
+}
