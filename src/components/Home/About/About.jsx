@@ -10,22 +10,22 @@ const About = () => {
     {
       img: <img src={Sachin} alt="" />,
       name: "Sachin Yadav",
-      Post: "Designer",
+      Post: "Head Of Designers",
     },
     {
       img: <img src={Rachit} alt="" />,
       name: "Rachit Yadav",
-      Post: "Developer",
+      Post: "Project Manager",
     },
     {
-      img: <img src={Sachin} alt="" />,
-      name: "Sachin Yadav",
-      Post: "Designer",
+      img: <img width="200" title="Ramniwas Yadav" src="https://media.licdn.com/dms/image/C5603AQETBZAbCVXaSw/profile-displayphoto-shrink_400_400/0/1517729352883?e=1688601600&amp;v=beta&amp;t=r2V18P-IPvmeLIQhXsQ8r9uMlfjnfp53G8j5JiucGvM" height="200" alt="Ramniwas Yadav" id="ember1728" class="pv-top-card-profile-picture__image pv-top-card-profile-picture__image--show evi-image ember-view"/>,
+      name: "Ramniwash Yadav",
+      Post: "Director",
     },
     {
-      img: <img src={Rachit} alt="" />,
-      name: "Rachit Yadav",
-      Post: "Developer",
+      img: <img width="200" title="Rajath Jaiin, #HIRING" src="https://media.licdn.com/dms/image/D5635AQHvbHOjSuHiqA/profile-framedphoto-shrink_400_400/0/1682494458642?e=1683982800&amp;v=beta&amp;t=EH7HcMVaAPnXLYiVHubNtfE5xRy7DQS2CLtQ3f1gat0" height="200" alt="Rajath Jaiin, #HIRING" id="ember1728" class="pv-top-card-profile-picture__image pv-top-card-profile-picture__image--show evi-image ember-view"/>,
+      name: "Rajat Jain",
+      Post: "Assistant Manager ",
     },
   ];
 
